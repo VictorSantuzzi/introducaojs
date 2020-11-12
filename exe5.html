@@ -1,0 +1,36 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"],
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
+        },
+      ];
+
+      // for (let index = 0; index < usuarios.length; index++) {
+      //   const element = usuarios[index];
+      //   console.log(
+      //     "O ",
+      //     element.nome,
+      //     "possui as habilidades: ",
+      //     element.habilidades.join(", ")
+      //   );
+      // }
+
+      usuarios.forEach((usuario) => {
+        console.log(
+          "O ",
+          usuario.nome,
+          "possui as habilidades: ",
+          usuario.habilidades.join(", ")
+        );
+      });
+    </script>
+  </body>
+</html>
